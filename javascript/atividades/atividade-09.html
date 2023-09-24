@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09 Verificação de idade e autorização</title>
+
+
+    <script>
+
+        let idade = prompt('Qual é sua idade:', '');
+        let autorizacao = prompt('Você tem autorização dos pais Sim ou Não:', '');
+
+        if (idade >= 18 && autorizacao === 'sim') {
+            document.write('Idade: <b>' + idade + '</b>');
+            document.write('<br><font color=blue><b>Sim pode entrar.</b></font>');
+        } else {
+            document.write('Idade: <b>' + idade + '</b>')
+            document.write('<br><font color=red><b>NÃO pode entrar.</b></font>');
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
