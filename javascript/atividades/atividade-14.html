@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 14 Antecessor e Sucessor</title>
+
+
+
+  <script>
+
+    //Toda vez que eu uso o comando prompt ele vai me devolver um texto
+    //mesmo o usuario digitar um número
+    let numero = prompt('Digite um número: ', '');
+
+    document.write('Número digitado: ' + numero)
+   
+    //temos que converter o texto em número com o parseInt
+    let sucessor = parseInt(numero) + 1;
+
+    document.write('<br> Sucessor: <font color=blue>' + sucessor + '</font>');
+
+    let antecessor = parseInt(numero) - 1;
+    
+    document.write('<br> Antecessor: <font color=red>' + antecessor + '</font>');
+
+
+  </script>
