@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16 Boletim Escolar</title>
+
+    <script>
+
+        let nome = prompt('Digite um nome');
+
+        let nota1 = parseFloat(prompt('Digite a primeira nota'));
+
+        let nota2 = parseFloat(prompt('Digite a segunda nota'));
+        
+        let nota3 = parseFloat(prompt('Digite a terceira nota'));
+        
+        let nota4 = parseFloat(prompt('Digite a quarta nota'));
+
+
+        //Cálculo da média, somamos todos os números e depois divididos pela quantidade dos numeros
+        let media = (nota1+nota2+nota3+nota4) / 4; 
+        
+        document.write('Nome:', '' + nome+'<br>');
+
+        document.write('Nota 1: ', '' + nota1+'<br>');
+
+        document.write('Nota 2: ', '' + nota2+ '<br>');
+
+        document.write('Nota 3: ', '' + nota3+ '<br>');
+
+        document.write('Nota 4: ', '' + nota4+ '<br>');
+
+        document.write("Média: "+ media+'<br>');
+
+        //Verifica se aluno foi aprovado usando o resultado da média
+        if(media > 7){
+            document.write("Situação: <font color='blue'>Aprovado </font>"+'<br>');
+        }else{
+            document.write("Situação: <font color='red'> Reprovado </font>"+'<br>');
+        }
+
+
+    
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
