@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 17 Valor de Venda</title>
+
+    <script>
+
+        let valordecusto = parseFloat(prompt('Digite valor de custo do produto: '));
+        let percentual = parseFloat(prompt('Digite valor de percentual de venda: '));
+
+        let valordevenda = valordecusto + (percentual / 100) * valordecusto;
+        // 0 =         1500.00 +       (25/100) * 1500.00;
+        // 0 =         1500.00 +       (0.25) * 1500.00;
+        // 0 =         1500.00 +       (0.25 * 1500.00);
+        // 0 =         1500.00 +       375.00
+        // 0 <= 1875;
+        //valordevenda = 1875;   
+
+        let lucro = valordevenda - valordecusto;
+
+
+        document.write('Valor de custo: ' + "<strong>" + valordecusto + "</strong> <br>");
+        document.write('Percentual de venda: ' + "<strong>" + percentual + "</strong> %<br>");
+        document.write('Valor de venda: ' +  "<strong>" +valordevenda +  "</strong><br>");
+        document.write('Lucro: ' + "<font color='red'> <strong>"  + lucro + "</strong></font>");
+       
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
