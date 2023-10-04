@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Status Ticket</title>
+
+    <script>
+
+        let ticket = parseInt(prompt('Digite aqui o numero do seu ticket: '));
+
+        //1 - Aberto 
+        //2 - Em Andamento
+        //3 - Resolvido
+        //4 - Fechado
+
+        switch (ticket) {
+            case 1:
+                document.write('Status do Ticket: Aberto');
+                break;
+
+            case 2:
+                document.write('Status do Ticket: Em Andamento');
+                break;
+
+            case 3:
+                document.write('Status do Ticket: Resolvido');
+                break;
+
+            case 4:
+                document.write('Status do Ticket: Fechado');
+                break;
+
+            default:
+
+                document.write('Ticket Inválido');
+
+                break;
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
