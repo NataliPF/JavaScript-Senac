@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+
+    <style>
+        * {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+    <script>
+
+        alert('Seja bem vindo! \n Responda as questões com o NÙMERO da alternativa CORRETA.')
+
+        let pergunta1 = parseInt(prompt('Como iniciar uma variável? \n 1 - let \n 2 - var \n 3 - const \n 4 - if'))
+
+        let pergunta2 = parseInt(prompt('O que é o JavaScript? \n 1 - Linguagem de progamação \n 2 - Linguagem de estilo \n 3 - Linguagem de marcação \n 4 - Linguagem orientada a objetos'))
+
+        let pergunta3 = parseInt(prompt('Qual tag é ultilizada para descrever um parágrafo? \n 1 - A tag <p> \n 2 - A tag <h1> \n 3 - A tag <br>\n 4 - A tag <div>'))
+
+        let pergunta4 = parseInt(prompt('Qual tag é ultilizada para definir uma imagem? \n 1 - A tag <input>\n 2 - A tag <br>\n 3 - A tag <li>\n 4 - A tag <img>'))
+
+        let pergunta5 = parseInt(prompt('Qual tag ultilizamos para criar um link? \n 1 - A tag <head>\n 2 - A tag <body>\n 3 - A tag <footer>\n 4 - A tag <a href=""></a>'))
+
+        let resposta1 = 0;
+
+        let resposta2 = 0;
+
+        let resposta3 = 0;
+
+        let resposta4 = 0;
+
+        let resposta5 = 0;
+
+
+
+
+
+        if (pergunta1 === 1) {
+
+            resposta1 = 1;
+
+
+
+        }
+
+
+
+        if (pergunta2 === 1) {
+
+            resposta2 = 1;
+
+
+
+        }
+
+
+
+        if (pergunta3 === 1) {
+
+            resposta3 = 1;
+
+
+
+        }
+
+
+
+        if (pergunta4 === 4) {
+
+            resposta4 = 1;
+
+
+
+        }
+
+
+
+
+
+        if (pergunta5 === 4) {
+
+            resposta5 = 1;
+
+
+
+        }
+
+
+
+        document.write('<h1><Font color=blue>Resultado<h1></font><br><br>');
+
+
+
+        document.write('Pergunta 1:Como iniciar uma variável? <br>');
+
+        document.write('Alternativa correta: 1');
+
+        document.write('<br>Sua resposta: ' + pergunta1 + '<hr>');
+
+
+
+        document.write('Pergunta 2:O que é o JavaScript? <br>');
+
+        document.write('Alternativa correta: 1');
+
+        document.write('<br>Sua resposta: ' + pergunta2 + '<hr>');
+
+
+
+        document.write('Pergunta 3:Qual tag é ultilizada para descrever um parágrafo? <br>');
+
+        document.write('Alternativa correta: 1');
+
+        document.write('<br>Sua resposta: ' + pergunta3 + '<hr>');
+
+
+
+        document.write('Pergunta 4:Qual tag é ultilizada para definir uma imagem? <br>');
+
+        document.write('Alternativa correta: 4');
+
+        document.write('<br>Sua resposta: ' + pergunta4 + '<hr>');
+
+
+
+        document.write('Pergunta 5:Qual tag ultilizamos para criar um link? <br>');
+
+        document.write('Alternativa correta: 4');
+
+        document.write('<br>Sua resposta: ' + pergunta5 + '<hr>');
+
+
+
+
+
+        //pegunta 1:, pergunta, alternativa correta, sua resposta,
+
+
+
+
+
+        let total = resposta1 + resposta2 + resposta3 + resposta4 + resposta5;
+
+        document.write('Pontos: ' + total);
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
