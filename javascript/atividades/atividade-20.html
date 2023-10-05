@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void e Return</title>
+
+    <script>
+
+    
+        //Função do tipo void, não retorna nenhum valor para ser utilizado
+        document.write('<h3>Utilizando Função do tipo void</h3>');
+
+        function mensagem() {
+            document.write('Olá, Seja bem vindo');
+            document.write('<br>');
+        }
+
+        mensagem();
+
+        //Função do tipo returnn, executam uma tarefa e devolvem o resultado
+        document.write('<h3>Utilizando Função do tipo return</h3>');
+
+        function exebirNome() {
+
+            let nome= prompt('Digite seu nome');
+            return nome;
+        }
+
+        let nomeDaPessoa = exebirNome();
+        document.write('Você digitou o nome: '+nomeDaPessoa);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
