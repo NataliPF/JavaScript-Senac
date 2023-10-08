@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia interativa com Funçoes de Callback em Javascript</title>
+
+<body>
+
+
+    <button id="meuBotao" onclick='background1()'>Alterar o fundo para vermelho</button>
+    <br><br><br>
+
+    <button id="meuBotao" onclick='background2()'>Alterar o fundo para branco</button>
+    <br><br><br>
+
+    <button id="meuBotao" onclick='mensagemAlert()'>Mensagem no alert</button>
+    <br><br><br>
+
+    <button id="meuBotao" onclick='mensagemPagina()'>Mensagem na pagina</button>
+    <br><br><br>
+
+    <script>
+
+        function background1(){
+            document.bgColor = "red";
+        }
+
+        function background2(){
+            document.bgColor = "white";
+        }
+
+        function mensagemAlert(){
+            alert("Aula show de bola!");
+        }
+
+        function mensagemPagina(){
+            document.write("Estudar é bom de mais!");
+        }
+    </script>
+
+  
+</body>
+</head>
