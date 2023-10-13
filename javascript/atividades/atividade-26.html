@@ -35,27 +35,33 @@
 
           // Realizar operação com base na operação selecionada
           switch (operacao) {
+                  
             case '+':
               resultado = num1 + num2
               tipoOperacao = "Soma";
               break
+                  
             case '-':
               resultado = num1 - num2
               tipoOperacao = "Subtração";
               break
+                  
             case '*':
               resultado = num1 * num2
               tipoOperacao = "Multiplicação";
               break
+                  
             case '/':
               if (num2 !== 0) {
                 resultado = num1 / num2
                 tipoOperacao = "Divisão";
+                  
               } else {
                 resultado = 'Divisão por zero!'
                 tipoOperacao = "Divisão";
               }
               break
+                  
             default:
               resultado = 'Operação Inválida'
           }
@@ -71,6 +77,8 @@
           document.getElementById('resultado').value = 'Entrada Inválida'
         }
       }
+        
     </script>
+    
   </body>
 </html>
