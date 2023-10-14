@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+
+        <h2>Contador</h2>
+
+        <label>Número:</label>
+        <input type="text" id="contador">
+
+        <button onclick="incrementarContador()">Aumentar</button> 
+        <button onclick="decrementarContador()">Diminuir</button>
+
+<script>
+
+    // Função para incrementar o contador
+    function incrementarContador() {
+
+        // Obtém o valor atual da caixa de texto, converte para número e incrementa
+        let contadorInput = document.getElementById('contador');
+
+        let valorAtual = parseInt(contadorInput.value);
+
+        valorAtual++;
+
+        contadorInput.value = valorAtual;
+
+    }
+
+    // Função para decrementar o contador
+    function decrementarContador() {
+
+        // Obtém o valor atual da caixa de texto, converte para número e decrementa
+        let contadorInput = document.getElementById('contador');
+
+        let valorAtual = parseInt(contadorInput.value);
+
+        valorAtual--;
+
+        contadorInput.value = valorAtual;
+    }
+
+</script>
+</body>
+</html>
