@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+</head>
+
+<body>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #relogio{
+            
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+            border-radius: 50%;
+            border: 10px solid black;
+        }
+
+        #horas {
+            margin-top: 40px;                
+            font-size: 3rem;
+        }
+
+        #minutos{
+            font-size: 3rem;
+        }
+
+        #segundos{
+            font-size: 3rem;
+        }
+
+        .separador{
+            font-weight: bold;
+        }
+    
+
+    </style>
+
+    <h2 style="text-align: center;">Relógio Digital</h3>
+
+    <div id="relogio">
+        
+        <div id="horas"></div>
+        <span class="separador"> :</span>
+        <div id="minutos"></div>
+        <span class="separador"> :</span>
+        <div id="segundos"></div>
+
+    </div>
+
+    
+
+    <script>
+
+        const horas = document.getElementById('horas');
+        const minutos = document.getElementById('minutos');
+        const segundos = document.getElementById('segundos');
+
+        const relogio = setInterval(function time() {
+            let dateToday = new Date();
+            let hr = dateToday.getHours();
+            let min = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+            if (hr < 10) hr = '0' + hr;
+            if (min < 10) min = '0' + min;
+            if (s < 10) s = '0' + s;
+            horas.textContent = hr;
+            minutos.textContent = min;
+            segundos.textContent = s;
+        })
+
+    </script>
+
+</body>
+
+</html>
